@@ -14,6 +14,6 @@ Violet-Indigo-Blue-Green-Yellow-Orange-Red
 const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
 
 const hyphenateArray = (resultantString, arrayItem) =>
-  resultantString.length !== 0 ? resultantString + "-" + arrayItem : arrayItem;
+  `${resultantString}-${arrayItem}`;
 
-console.log(arr.reduce(hyphenateArray, ""));
+console.log(arr.reduce(hyphenateArray));
