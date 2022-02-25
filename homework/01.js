@@ -33,3 +33,14 @@ const containsVowels = (word) =>
     .some((w) => "aeiou".split("").includes(w));
 
 console.log(words.filter(containsVowels));
+
+const someStringArray = ["abcd", "bcd", "aei", "fgh"];
+const containVowel = someStringArray.filter((n) => {
+  for (let char of n) {
+    if ("aeiouAEIOU".includes(char)) {
+      return n;
+      break;
+    }
+  }
+});
+console.log(containVowel);
